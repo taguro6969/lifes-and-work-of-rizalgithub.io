@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Rizal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Set background image for the entire page */
+        body {
+            background-image: url('ss.webp');
+            background-size: cover; /* Make sure the image covers the whole screen */
+            background-position: center center; /* Center the image */
+            background-attachment: fixed; /* Make the background image stay in place while scrolling */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Optional: Set a color overlay for better text visibility */
+        #hero {
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            color: white;
+        }
+
+        /* Styles for about section image */
+        #about img {
+            max-width: 300px; /* Limit the width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Optional: Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+            margin-right: 20px; /* Add space between the image and the text */
+            float: left; /* Optional: Align image to the left of the text */
+        }
+
+        .about-content {
+            overflow: hidden; /* Ensure content wraps around the image properly */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+           
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>The Life and Works of José Rizal</h2>
+        <p>What is the life and works of Rizal RA 1425?
+            AN ACT TO INCLUDE IN THE CURRICULA OF ALL PUBLIC AND PRIVATE SCHOOLS, COLLEGES AND UNIVERSITIES COURSES ON THE LIFE, WORKS AND WRITINGS OF JOSE RIZAL, PARTICULARLY HIS NOVELS NOLI ME TANGERE AND EL FILIBUSTERISMO, AUTHORIZING THE PRINTING AND DISTRIBUTION THEREOF, AND FOR OTHER PURPOSES.</p>
+        <button onclick="scrollToAbout()">Learn More</button>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About José Rizal</h2>
+        <div class="about-content">
+            <img src="https://cdn.britannica.com/34/136034-050-CD2288F0/Jose-Rizal.jpg" alt="José Rizal">
+            <p>
+                José Rizal (born June 19, 1861, Calamba, Philippines—died December 30, 1896, Manila) was a patriot, physician, and man of letters who was an inspiration to the Philippine nationalist movement.
+                The son of a prosperous landowner, Rizal was educated in Manila and at the University of Madrid. A brilliant medical student, he soon committed himself to the reform of Spanish rule in his home country, though he never advocated Philippine independence. Most of his writing was done in Europe, where he resided between 1882 and 1892.
+            </p>
+        </div>
+    </section>
+
+    <section id="works">
+        <h1><center>Life and Works of Rizal</center></h1>
+        <h3>Timeline 19th Century Philippines as Rizal’s Context</h3>
+        <p><a href="timeline.pdf" target="_blank">Download Here</a></p>
+        
+        <h3>Rizal's Life Abroad (1st Europe)</h3>
+        <p><a href="Rizal’s Life in Europe.pptx" target="_blank">Download Here</a></p>
+        
+        <h3>Rizal's Second Travel & Home Coming</h3>
+        <p><a href="https://www.canva.com/design/DAGPgVeGtvE/8k2hRTST4V-7zIl9n74GWQ/edit" target="_blank">Download Here</a></p>
+        
+        <h3>Life in Dapitan</h3>
+        <p><a href="https://www.canva.com/design/DAGP9dqqFuI/4XhuOTOSvYdBjogL3yDd3Q/edit" target="_blank">Download Here</a></p>
+        
+        <h3>From Dapitan to Trial in Fort Santiago</h3>
+        <p><a href="https://www.canva.com/design/DAGQUvQ83wI/l1Z4CWsVsj533kNh9V2C7Q/edit" target="_blank">Download Here</a></p>
+        
+        <h3>Annotations of Antonio Morga's Sucesos De Las Islas Filipinas</h3>
+        <p><a href="https://drive.google.com/file/d/1Tr7L0nev4NjsNcVLcRRuYEVc2j0DgttS/view" target="_blank">Download Here</a></p>
+        
+        <h3>Noli Me Tangere & El Filibusterismo</h3>
+        <p><a href="https://www.canva.com/design/DAGVbs5SkTE/Rf3aoLDrroz9JrPC2FOsHQ/edit" target="_blank">Download Here</a></p>
+        
+        <h3>The Philippines a Century Hence</h3>
+        <p><a href="https://www.canva.com/design/DAGVsAXQu3E/UQVkUrfsWF_0WorxtLIl_w/edit" target="_blank">Download Here</a></p>
+        
+        <h3>A. Jose Rizal and Philippine Nationalism: Bayani and Kabayanihan</h3>
+        <h3>B. Jose Rizal and Philippine Nationalism: National Symbol</h3>
+        <p><a href="https://www.canva.com/design/DAGVsAXQu3E/UQVkUrfsWF_0WorxtLIl_w/edit" target="_blank">Download Here</a></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Ms. Janeth Ricamara. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
